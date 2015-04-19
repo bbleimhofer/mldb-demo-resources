@@ -36,8 +36,7 @@ print "    Size:", size_ds, "samples"
 # Get the config of the data set
 datasetConfig = {
         "type": "mutable",
-        "id": id_ds,
-        "address": id_ds + ".beh.gz"
+        "id": id_ds
     }
 dataset = mldb.create_dataset(datasetConfig)
 
