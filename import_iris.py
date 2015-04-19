@@ -3,8 +3,7 @@ import datetime
 
 datasetConfig = {
         "type": "mutable",
-        "id": "iris_dataset",
-        "address": "iris_dataset.beh.gz"
+        "id": "iris_dataset"
     }
 
 dataset = mldb.create_dataset(datasetConfig)
