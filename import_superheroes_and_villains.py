@@ -3,8 +3,7 @@ mldb_url = "http://localhost:80"
 rest_root = mldb_url + "/v1"
 datasetConfig = {
         "type": "mutable",
-        "id": "superheroes_and_villains",
-        "address": "superheroes_and_villains.beh.gz"
+        "id": "superheroes_and_villains"
     }
 
 dataset = mldb.create_dataset(datasetConfig)
