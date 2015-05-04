@@ -2,7 +2,7 @@ import requests
 import datetime
 
 datasetConfig = {
-        "type": "mutable",
+        "type": "beh_mutable",
         "id": "iris_dataset"
     }
 
