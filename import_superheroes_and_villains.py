@@ -2,7 +2,7 @@ import datetime
 mldb_url = "http://localhost:80"
 rest_root = mldb_url + "/v1"
 datasetConfig = {
-        "type": "beh_mutable",
+        "type": "beh.mutable",
         "id": "superheroes_and_villains"
     }
 
