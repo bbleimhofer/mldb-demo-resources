@@ -1,7 +1,11 @@
 // Word cloud layout by Jason Davies, http://www.jasondavies.com/word-cloud/
 // Algorithm due to Jonathan Feinberg, http://static.mrfeinberg.com/bv_ch03.pdf
 (function() {
-function cloud(window.d3) {
+
+if (typeof define === "function" && define.amd) define(["d3"], cloud);
+else cloud(this.d3);
+
+function cloud(d3) {
   d3.layout.cloud = function cloud() {
     var size = [256, 256],
         text = cloudText,
