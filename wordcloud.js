@@ -16,7 +16,7 @@ function drawCloud(input_words) {
   }
   var fill = d3.scale.category20();
   var layout = d3.layout.cloud()
-      .size(800, 300]).words(input_words).padding(8).rotate(0)
+      .size([800, 300]).words(input_words).padding(8).rotate(0)
       .fontSize(function(d) { return 2*d.size+10; })
       .on("end", draw);
   layout.start();
